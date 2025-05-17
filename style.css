@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Calistoga&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html,
+body {
+    overflow-x: hidden;
+    max-width: 100%;
+}
+
+
+.hero-bg {
+    background-color: #F0E68C;
+    height: auto;
+    width: 100%;
+
+
+
+}
+
+/* Style the collapsed menu */
+@media (max-width: 991.98px) {
+    .custom-collapse {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        z-index: 1000;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        padding: 1rem 0;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.75rem 1.5rem;
+        color: #333;
+    }
+
+    .navbar-toggler {
+        border: none;
+        outline: none;
+    }
+}
+
+
+.navbar {
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+
+.navbar .nav-link {
+    font-size: 15px;
+    color: #835e3f;
+    font-weight: 600;
+    font-family: "Poppins";
+}
+
+.navbar .nav-item {
+    margin: 20px;
+}
+
+.navbar .nav-link:hover {
+    color: #ffff;
+}
+
+.navbar .navbar-brand img {
+    width: auto;
+}
+
+.heading {
+    padding-top: 100px;
+}
+
+.heading h1 {
+    font-family: "Calistoga";
+    color: #835e3f;
+    font-size: 70px;
+}
+
+.hero-paragraph {
+    font-family: "Nunito";
+    color: #835e3f;
+    font-size: 23px;
+
+}
+
+.hero-btn {
+    width: auto;
+}
+
+.hero-btn .order-btn {
+    width: 40%;
+    text-transform: uppercase;
+    color: #ffff;
+    font-weight: bold;
+    background-color: #716c53;
+    padding: 18px;
+    font-size: 20px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.order-btn:hover {
+    cursor: pointer;
+    background-color: #835e3f;
+}
+
+.burger-img {
+    width: 100%;
+    overflow: hidden;
+}
+
+.burger-img img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* .our-team {
+    padding-top: 100px;
+    background-image: url("/assets/Background.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    text-align: center;
+} */
+.our-team,
+.our-team-bottom {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 0;
+    margin: 0;
+    border: none;
+    display: block;
+}
+
+.our-team {
+    padding-top: 100px;
+    background-image: url("/assets/Background.png");
+}
+
+.our-team-bottom {
+    
+    margin-top: -1px;
+    background-color: #f8e0bb;
+    background-image: url("/assets/bg-2.png");
+}
+
+
+.design {
+    background: url('/assets/Design.png') no-repeat center center;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.team-heading {
+    color: #835e3f;
+    font-family: "Calistoga";
+    font-size: 50px;
+}
+
+.about-team {
+    font-family: "Montserrat";
+    color: #835e3f;
+    font-size: 18px;
+}
+
+.team-card {
+    background: transparent;
+    border-radius: 50%;
+    padding: 30px 20px;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+    position: relative;
+    z-index: 2;
+}
+
+.team-card:hover {
+    transform: translateY(-8px);
+}
+
+.team-card img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid #f9cfa6;
+    margin-bottom: 10px;
+}
+
+.team-card h4 {
+    margin: 0;
+    font-size: 19px;
+    font-weight: 600;
+    color: #553c2e;
+}
+
+.team-card p {
+    margin: 0;
+    font-size: 16px;
+    color: #a57956;
+}
+
+.design {
+    background: url('/assets/Design.png') no-repeat center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 0;
+    opacity: 0.4;
+    pointer-events: none;
+}
+
+
+@media (max-width: 992px) {
+    .heading h1 {
+        font-size: 50px;
+    }
+
+
+    .hero-paragraph {
+        font-size: 18px;
+    }
+
+    .hero-btn .order-btn {
+        width: 50%;
+        font-size: 18px;
+        /* padding: 15px; */
+        margin-bottom: 20px;
+    }
+
+    .team-card img {
+        width: 160px;
+        height: 160px;
+    }
+
+    .team-card h4 {
+        font-size: 17px;
+    }
+
+    .team-card p {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 768px) {
+    .heading {
+        padding-top: 50px;
+        text-align: center;
+    }
+
+    .hero-section .row {
+        flex-direction: column-reverse;
+    }
+
+    .hero-paragraph {
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .hero-btn {
+        display: flex;
+        justify-content: center;
+    }
+
+    .burger-img {
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .team-heading {
+        font-size: 40px;
+    }
+
+    .about-team {
+        font-size: 16px;
+    }
+
+    .team-card img {
+        width: 140px;
+        height: 140px;
+    }
+
+    .order-btn {
+        width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .heading h1 {
+        font-size: 38px;
+    }
+
+    .hero-paragraph {
+        font-size: 16px;
+    }
+
+    .order-btn {
+        width: 80%;
+        font-size: 16px;
+        padding: 12px;
+    }
+
+    .team-heading {
+        font-size: 34px;
+    }
+
+    .about-team {
+        font-size: 15px;
+    }
+}
+
+/* Fix for new-burger overlapping */
+.our-team-bottom {
+    padding-top: 80px;  /* Increased padding to prevent overlap */
+    padding-bottom: 80px;
+    position: relative; /* Ensures proper stacking context */
+    z-index: 1;         /* Places above any absolute positioned elements */
+}
+
+.new-burger {
+    margin-top: 40px;    /* Added margin to separate from content above */
+    margin-bottom: 40px;
+}
+
+.new-burger img {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    position: relative;  /* Changed from absolute if it was set */
+}
+/* ===== More Tasty Section ===== */
+.tasty-burger {
+    padding-left: 50px;
+}
+
+.tasty-burger .heading h1 {
+    font-family: "Calistoga", serif;
+    color: #835e3f;
+    font-size: 3.5rem;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.tasty-burger .hero-paragraph {
+    font-family: "Nunito", sans-serif;
+    color: #835e3f;
+    font-size: 1.3rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+    position: relative;
+    padding-bottom: 1.5rem;
+}
+
+
+
+.tasty-burger .hero-btn .order-btn {
+    width: auto;
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background-color: #716c53;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.tasty-burger .hero-btn .order-btn:hover {
+    background-color: #835e3f;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .tasty-burger {
+        padding-left: 30px;
+    }
+    
+    .tasty-burger .heading h1 {
+        font-size: 2.8rem;
+    }
+    
+    .tasty-burger .hero-paragraph {
+        font-size: 1.1rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .tasty-burger {
+        padding-left: 15px;
+        padding-right: 15px;
+        text-align: center;
+    }
+    
+    .tasty-burger .hero-paragraph::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .tasty-burger .hero-btn .order-btn {
+        width: 100%;
+        max-width: 250px;
+    }
+}
