@@ -447,3 +447,8 @@ body {
 .padding-class{
     padding-top: 100px;
 }
+.statistics{
+    width: 100%;
+    height: auto;
+    background-color: #f8e0bb;
+}
