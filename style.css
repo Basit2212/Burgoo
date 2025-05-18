@@ -136,7 +136,7 @@ body {
 .our-team,
 .our-team-bottom {
     width: 100%;
-    height: 100vh;
+    height: auto;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -147,7 +147,7 @@ body {
 }
 
 .our-team {
-    padding-top: 100px;
+    padding-top: 20%;
     background-image: url("/assets/Background.png");
 }
 
@@ -160,7 +160,7 @@ body {
 
 
 .design {
-    background: url('/assets/Design.png') no-repeat center center;
+    background: url('/assets/Design.png')  center center;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -355,7 +355,6 @@ body {
     border-radius: 50%;
     display: block;
     margin: 0 auto;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     position: relative;  /* Changed from absolute if it was set */
 }
 /* ===== More Tasty Section ===== */
@@ -369,7 +368,7 @@ body {
     font-size: 3.5rem;
     line-height: 1.2;
     margin-bottom: 1rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 1px;
 }
 
@@ -390,7 +389,7 @@ body {
     display: inline-block;
     padding: 15px 40px;
     font-size: 1.1rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     letter-spacing: 2px;
     background-color: #716c53;
     color: white;
@@ -421,6 +420,12 @@ body {
         font-size: 1.1rem;
     }
 }
+@media  (max-width:991px){
+    .new-burger-img{
+        padding-top: 30px;
+    }
+    
+}
 
 @media (max-width: 768px) {
     .tasty-burger {
@@ -438,4 +443,7 @@ body {
         width: 100%;
         max-width: 250px;
     }
+}
+.padding-class{
+    padding-top: 100px;
 }
