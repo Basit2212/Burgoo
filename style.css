@@ -148,19 +148,19 @@ body {
 
 .our-team {
     padding-top: 20%;
-    background-image: url("/assets/Background.png");
+    background-image: url("assets/Background.png");
 }
 
 .our-team-bottom {
 
     margin-top: -1px;
     background-color: #f8e0bb;
-    background-image: url("/assets/bg-2.png");
+    background-image: url("assets/bg-2.png");
 }
 
 
 .design {
-    background: url('/assets/Design.png') center center;
+    background: url('assets/Design.png') center center;
     background-size: cover;
     position: absolute;
     top: 0;
@@ -224,7 +224,7 @@ body {
 }
 
 .design {
-    background: url('/assets/Design.png') no-repeat center;
+    background: url('assets/Design.png') no-repeat center;
     background-size: contain;
     position: absolute;
     top: 0;
