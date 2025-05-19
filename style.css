@@ -122,17 +122,6 @@ body {
     display: block;
 }
 
-/* .our-team {
-    padding-top: 100px;
-    background-image: url("/assets/Background.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-    position: relative;
-    text-align: center;
-} */
 .our-team,
 .our-team-bottom {
     width: 100%;
